@@ -50,19 +50,19 @@ total();
 
 
 function removeFromCart(item) {
-<<<<<<< HEAD
+
   let inCart = 0;
   for(let i = 0; i < cart.length; i++) {
     inCart =  cart[i].itemName;
     if(inCart === item) {
       cart.splice(i, 1);
-=======
+
   for(let i = 0; i < cart.length; i++) {
     return cart[i].itemName;
     if(cart.itemName === item) {
       cart = cart.splice(i, 1);
       console.log(cart);
->>>>>>> 1340c6bd576dc27e7fa54dba29f1af7f677e2f93
+
       return cart;
     }
   }
@@ -72,7 +72,7 @@ removeFromCart(item);
 
 
 function placeOrder(cardNumber) {
-<<<<<<< HEAD
+
   let totalCost = total();
   if(!cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
@@ -82,7 +82,7 @@ function placeOrder(cardNumber) {
   }
 }
 placeOrder(cardNumber);
-=======
+
   if(!cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
   }else {
@@ -92,5 +92,4 @@ placeOrder(cardNumber);
   return cart;
 }
 total(cartTotal);
-placeOrder(83296759);
->>>>>>> 1340c6bd576dc27e7fa54dba29f1af7f677e2f93
+placeOrder(cardNumber);
