@@ -82,4 +82,3 @@ function placeOrder(cardNumber) {
   }
 }
 placeOrder(cardNumber);
-
