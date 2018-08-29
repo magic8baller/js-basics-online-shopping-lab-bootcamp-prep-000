@@ -92,5 +92,4 @@ placeOrder(cardNumber);
   return cart;
 }
 
-total(cartTotal);
-placeOrder(83296759);
+placeOrder(cardNumber);
