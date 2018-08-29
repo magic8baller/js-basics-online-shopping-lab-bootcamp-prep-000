@@ -93,4 +93,4 @@ placeOrder(cardNumber);
 }
 
 total(cartTotal);
-//placeOrder(83296759);
+placeOrder(83296759);
