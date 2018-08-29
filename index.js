@@ -18,15 +18,16 @@ function addToCart(item) {
 }
 
 
+
 function viewCart() {
   if (cart.length === 0) {
       return 'Your shopping cart is empty.';
   }
-let newArray = [];
   for(let i = 0; i < cart.length; i++) {
-    let item2 = cart[i].itemName;
-    let price2 = cart[i].itemPrice;
-    newArray.push(`${item2} at $${price2}`);
+    let newArray = [];
+    let item = cart[i].itemName;
+    let price = cart[i].itemPrice;
+    newArray.push(`${item} at $${price}`);
   }
       let announce = 'In your cart, you have ';
       if(cart.length === 1) {
@@ -39,6 +40,8 @@ let newArray = [];
 }
 viewCart();
 
+
+
 function total() {
   let sum = 0;
   for(let i = 0; i < cart.length; i++) {
@@ -47,6 +50,7 @@ function total() {
   return sum;
 }
 total();
+
 
 
 function removeFromCart(item) {
@@ -62,6 +66,7 @@ function removeFromCart(item) {
   return 'That item is not in your cart.';
 }
 removeFromCart(item);
+
 
 
 function placeOrder(cardNumber) {
