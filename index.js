@@ -20,7 +20,7 @@ function addToCart(item) {
 
 
 function viewCart() {
-  
+
   for(let i = 0; i < cart.length; i++) {
     let newArray = [];
     let item = cart[i].itemName;
@@ -39,7 +39,6 @@ function viewCart() {
      return 'Your shopping cart is empty.';
   }
 }
-viewCart();
 
 
 
@@ -50,7 +49,6 @@ function total() {
   }
   return sum;
 }
-total();
 
 
 
@@ -66,7 +64,6 @@ function removeFromCart(item) {
   }
   return 'That item is not in your cart.';
 }
-removeFromCart(item);
 
 
 
@@ -80,4 +77,3 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`;
   }
 }
-placeOrder(cardNumber);
