@@ -56,13 +56,6 @@ function removeFromCart(item) {
     inCart =  cart[i].itemName;
     if(inCart === item) {
       cart.splice(i, 1);
-
-  for(let i = 0; i < cart.length; i++) {
-    return cart[i].itemName;
-    if(cart.itemName === item) {
-      cart = cart.splice(i, 1);
-      console.log(cart);
-
       return cart;
     }
   }
@@ -77,7 +70,7 @@ function placeOrder(cardNumber) {
   if(!cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
   }else {
-    cart = [];
+    cart.length === 0;
     return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`;
   }
 }
